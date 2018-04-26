@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Login</title>
+        <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/assets/css/style.css">
+    </head>
+    <body>
+    <div class="container">
+        <div class="form">
+            <form action="/login/auth/" method="post">
+                <input type="email" name="email" placeholder="Email" required/>
+                <input type="password" name="password" placeholder="Password" required/>
+                <input type="hidden" name="token" value="<?php echo $token ?>"/>
+                <button type="submit"/>Login</button>
+            </form>
+            <p>Don't have an account ? <a href="/register">Register now</a></p>
+            <?php
+                if(isset($status) && $status == '0' ){
+                    echo 'Email or password incorrect. Try again.';
+                }
+                if(isset($status) && $status == '1' ){
+                    echo 'Successful registration.';
+                }
+            ?>
+            <a href="forget">Forget password?</a>
+            <br>
+            <?php
+            if($err && $err=="1"){
+                echo "<p>User or Password Invalid. Try again.</p>";
+            }
+            ?>
+            
+        </div>
+    </div>
+    </body>
+</html>
