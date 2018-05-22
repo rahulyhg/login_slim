@@ -15,7 +15,6 @@ CREATE TABLE `users` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 
-INSERT INTO `users` VALUES (1,'Erik Figueiredo','erik@schoolofnet.com','123456','123456', NOW(), NOW());
-INSERT INTO `users` VALUES (2,'Usuario 1','usuario1@schoolofnet.com','654321','654321', NOW(), NOW());
-INSERT INTO `users` VALUES (3,'Usuario 2','usuario2@schoolofnet.com','123456','123456', NOW(), NOW());
-INSERT INTO `users` VALUES (4,'Usuario 3','usuario3@schoolofnet.com','123456','123456', NOW(), NOW());
+INSERT INTO `users` VALUES (1,'Samuel Miquelino','samuelmiquelino@test.com','123456','123456', NOW(), NOW());
+INSERT INTO `users` VALUES (2,'Usuario 1','user@test.com','654321','654321', NOW(), NOW());
+INSERT INTO `users` VALUES (3,'Usuario 2','user@test.com','123456','123456', NOW(), NOW());
